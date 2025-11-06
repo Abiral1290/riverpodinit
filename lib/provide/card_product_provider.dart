@@ -16,10 +16,10 @@ class AllProductProvider extends Notifier<Set<Product>>{
 
   }
   void removeProduct(Product product){
-    state.product.placeOrder = product.placeOrder! - 1;
-    if(product.placeOrder! <= 1){
-      state = state.where((p)=>  p.id == product.id).toSet();
-    }
+    // state.product.placeOrder = product.placeOrder! - 1;
+    // if(product.placeOrder! <= 1){
+    //   state = state.where((p)=>  p.id == product.id).toSet();
+    // }
 
 
   }
