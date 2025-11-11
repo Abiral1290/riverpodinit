@@ -25,8 +25,10 @@ class MyApp extends ConsumerWidget{
   Widget build(BuildContext context, WidgetRef ref) {
 
     // TODO: implement build
-    return MaterialApp.router(
-      routerConfig: router,
+    return ProviderScope(
+      child: MaterialApp.router(
+        routerConfig: router,
+      ),
     );
   }
 
